@@ -3,5 +3,8 @@ project(RechnernetzPraxis)
 
 include(FindPCAP.cmake)
 
-add_executable(rechnernetz_praxis main.cpp)
-target_link_libraries(rechnernetz_praxis ${PCAP_LIBRARY})
+add_executable(RawEthernet RawEthernet.cpp)
+target_link_libraries(RawEthernet)
+
+
+# target_link_libraries(RawEthernet ${PCAP_LIBRARY})
